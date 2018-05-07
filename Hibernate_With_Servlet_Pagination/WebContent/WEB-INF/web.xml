@@ -1,0 +1,19 @@
+<web-app>
+
+<welcome-file-list>
+    <welcome-file>Index.html</welcome-file>
+  </welcome-file-list>
+
+	<servlet>
+		<servlet-name>abcd</servlet-name>
+		<servlet-class>com.java4s.hservlet.pagination.Pagination</servlet-class>
+
+	</servlet>
+
+	<servlet-mapping>
+			<servlet-name>abcd</servlet-name>
+			<url-pattern>/ind</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
