@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 import java.util.Iterator;
 import java.util.List;
 
+
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
@@ -15,7 +16,6 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 
@@ -25,7 +25,7 @@ public class Pagination extends HttpServlet {
 	SessionFactory factory;
 
 	public void init(ServletConfig config) throws ServletException {
-		factory = new Configuration().configure().buildSessionFactory();
+		factory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
 		System.out.println("Factory has been created....");
 	}
 
